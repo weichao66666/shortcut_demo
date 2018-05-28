@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d(TAG, "intent == null");
                 } else {
                     ShortcutInfoCompat shortcutInfo = new ShortcutInfoCompat.Builder(context, "shortcutInfo0")
-                            .setShortLabel("ShortLabel0")
+                            .setShortLabel(name)
                             .setIcon(IconCompat.createWithResource(context, iconResId))
                             .setIntent(intent)
                             .build();
